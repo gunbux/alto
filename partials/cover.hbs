@@ -4,6 +4,17 @@
     {{/if}}
 
     <div class="cover-content">
+
+        {{#if @site.icon}}
+            <div class="cover-icon">
+                <img class="cover-icon-image" src="{{@site.icon}}" alt="{{@site.title}}">
+            </div>
+        {{/if}}
+
+        {{#if @site.title}}
+            <h1 class="cover-title">{{@site.title}}</h1>
+        {{/if}}
+
         {{#if @site.description}}
             <div class="cover-description">
                 {{#unless @member}}
@@ -16,6 +27,48 @@
                     {{@site.description}}
                 {{/unless}}
             </div>
+        {{/if}}
+
+        {{#if @custom.socials}}
+            <div class="socials">
+                <a
+                        class="p-2 inline-block social-icon"
+                        title="Twitter"
+                        href="{{@custom.twitter}}"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                    {{> "icons/twitter"}}
+                </a>
+
+                <a
+                        class="hover:text-youtube p-2 social-icon"
+                        title="Youtube"
+                        href="{{@custom.youtube}}"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                    {{> "icons/icon-youtube"}}
+                </a>
+
+                <a
+                        class="hover:text-instagram p-2 social-icon"
+                        title="Instagram"
+                        href="{{@custom.instagram}}"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                    {{> "icons/icon-instagram"}}
+                </a>
+            </div>
+        {{/if}}
+
+        {{#if @custom.contact}}
+            <a class="contact-me"
+               href="{{@custom.contact}}"
+               target="_blank"
+               rel="noopener noreferrer">
+                <div>
+                    Ask for lessons!
+                </div>
+            </a>
         {{/if}}
 
         {{#if @site.members_enabled}}
