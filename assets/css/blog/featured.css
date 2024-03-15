@@ -1,6 +1,32 @@
 .short-bio {
     padding-bottom: 6vmin;
     text-align: center;
+    font-size: 1.8rem;
+}
+
+.tns-inner {
+    margin-top: 5px;
+}
+
+.featured-feed {
+    margin-top: 5px;
+}
+
+.featured-box {
+    background-color: transparent !important;
+}
+
+.featured-image {
+    border-radius: 50px;
+}
+
+
+.featured-post {
+    transition: transform .2s;
+}
+
+.featured-post:hover {
+    transform: translateY(-4px);
 }
 
 .featured-wrapper {
