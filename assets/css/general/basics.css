@@ -23,6 +23,11 @@
     --header-spacing: 6vmin;
 }
 
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+}
+
 .is-head-brand {
     --header-spacing: 8vmin;
 }

@@ -22,8 +22,12 @@ body:not(.with-full-cover) .cover {
     z-index: 10;
     content: "";
     background-color: #000;
-    opacity: 0.3;
+    opacity: 0.5;
     transition: opacity 1.5s ease;
+}
+
+.call-to-action {
+    color: #1a1a1a;
 }
 
 .cover.image-loading::before {
@@ -105,6 +109,7 @@ body:not(.with-full-cover) .cover {
 }
 .contact-me:hover {
     transform: rotate(2deg) scale(1.10);
+    opacity: 1
 }
 
 .has-serif-title .cover-description {

@@ -32,12 +32,12 @@
         {{#if @custom.socials}}
             <div class="socials">
                 <a
-                        class="p-2 inline-block social-icon"
+                        class="hover:text-twitter p-2 social-icon"
                         title="Twitter"
                         href="{{@custom.twitter}}"
                         target="_blank"
                         rel="noopener noreferrer">
-                    {{> "icons/twitter"}}
+                    {{> "icons/icon-twitter"}}
                 </a>
 
                 <a
@@ -65,7 +65,7 @@
                href="{{@custom.contact}}"
                target="_blank"
                rel="noopener noreferrer">
-                <div>
+                <div class="call-to-action">
                     Ask for lessons!
                 </div>
             </a>

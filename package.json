@@ -41,6 +41,15 @@
         },
         "card_assets": true,
         "custom": {
+            "color_scheme": {
+                "type": "select",
+                "options": [
+                    "Auto",
+                    "Light",
+                    "Dark"
+                ],
+                "default": "Auto"
+            },
             "navigation_layout": {
                 "type": "select",
                 "options": ["Logo on the left", "Logo in the middle", "Stacked"],
@@ -103,7 +112,12 @@
             },
             "featured_title": {
                 "type": "text",
-                "default": "Featured articles",
+                "default": "About Me",
+                "group": "homepage"
+            },
+            "short_bio": {
+                "type": "text",
+                "default": "",
                 "group": "homepage"
             },
             "feed_title": {
