@@ -1,6 +1,6 @@
-{{#get "pages" filter="featured:true" limit="all" as |featured|}}
-{{#if featured}}
-    <div class="gh-outer">
+{{#get "pages" filter="featured:true" limit="all" order="published_at desc" as |featured|}}
+    {{#if featured}}
+        <div class="gh-outer">
     <section class="featured-wrapper gh-inner">
 
         {{#if @custom.short_bio}}
